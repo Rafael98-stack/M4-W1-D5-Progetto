@@ -14,8 +14,5 @@ System.out.println("///////////Recupero Dati///////////");
 luminosita.getDati();
 audio.getDati();
     }
-    public static void main(String[] args) {
 
-play();
-    }
 }
