@@ -1,18 +1,23 @@
 package Contenuto;
 
-public class Video {
+public  class Video {
 
+    public Tipologia tipo = Tipologia.VIDEO;
 
+     public static void play(){
+         Luminosita luminosita = new Luminosita();
+         Audio audio = new Audio();
 
-   static public void play(){
-       Luminosita luminosita = new Luminosita();
-       Audio audio = new Audio();
+        System.out.println("///////////VIDEO///////////");
+        System.out.println("///////////Impostazioni:///////////");
+      luminosita.getDurata();
        luminosita.setAumentaLuminosita();
-
-       audio.setAlzaVolume();
+luminosita.setDiminuisciLuminosita(1);
+         audio.setAlzaVolume();
 System.out.println("///////////Recupero Dati///////////");
 luminosita.getDati();
 audio.getDati();
+
     }
 
 }

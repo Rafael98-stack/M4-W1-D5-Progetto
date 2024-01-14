@@ -18,12 +18,8 @@ public int Audio = 0;
          int Valore = Volume.nextInt();
          this.Audio=Valore;
          System.out.println("L'Audio' e' di: "+this.Audio);
-
          for (int i = 0; i<this.Audio;i++){
-
              System.out.print("*");
-
-
          }
          System.out.println();
      }
