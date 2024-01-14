@@ -1,6 +1,7 @@
 import Contenuto.Immagine;
 import Contenuto.Video;
 
+import java.util.InputMismatchException;
 import java.util.Objects;
 import java.util.Scanner;
 
@@ -11,11 +12,20 @@ public class ContenutoMultimediale {
     public static void main(String[] args) {
         Video video = new Video();
         Immagine immagine = new Immagine();
-       video.play();
-        immagine.show();
-        Modifiche();
-Conferma();
 
+        try {
+            video.play();
+            immagine.show();
+            Modifiche();
+            Conferma();
+         } catch (
+    InputMismatchException e){
+        System.out.println("Hai inserito una lettera... devi inserire un numero");
+            video.play();
+            immagine.show();
+            Modifiche();
+            Conferma();
+    }
     }
     public static void Modifiche() {
         final String str = "Vuoi Modificare Qualcosa?";

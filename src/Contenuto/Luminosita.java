@@ -34,17 +34,19 @@ abstract class   Intensita {
            }
 
            public void setAumentaLuminosita() {
-               Scanner Valore = new Scanner(System.in);
-               System.out.println("Impostare la Luminosita'");
-               int Luminosita = Valore.nextInt();
-               this.Valore = Luminosita;
-               final int n = Luminosita;
-               System.out.println("La Luminosita' e' di: " + this.Valore);
-               for (int i = 0; i < this.Valore; i++) {
-                   System.out.print("!");
-               }
 
-               System.out.println();
+                   Scanner Valore = new Scanner(System.in);
+                   System.out.println("Impostare la Luminosita'");
+                   int Luminosita = Valore.nextInt();
+                   this.Valore = Luminosita;
+                   final int n = Luminosita;
+                   System.out.println("La Luminosita' e' di: " + this.Valore);
+                   for (int i = 0; i < this.Valore; i++) {
+                       System.out.print("!");
+                   }
+
+                   System.out.println();
+
            }
 
            public void getDati() {
