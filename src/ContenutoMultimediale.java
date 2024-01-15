@@ -26,6 +26,15 @@ public class ContenutoMultimediale {
             Modifiche();
             Conferma();
     }
+        catch (ArithmeticException e){
+            System.out.println("Valore non valido");
+            video.play();
+            immagine.show();
+            Modifiche();
+            Conferma();
+        } finally {
+            System.out.println("///////////SCANNER CHIUSO///////////");
+        }
     }
     public static void Modifiche() {
         final String str = "Vuoi Modificare Qualcosa?";
